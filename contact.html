@@ -6,68 +6,125 @@ Web dev 1
 -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-  </head>
-  <body>
-    <!--Navigation bar-->
-    <nav>
-      <a href="index.html">Home </a>
-      <a href="projects.html">Projects </a>
-      <a href="Services.html">Services </a>
-      <a href="about.html">About </a>
-      <a href="blog.html">Blog </a>
-      <a href="contact.html">Contact </a>
-      <a href="My Resume">Resume</a>
-    </nav>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://kit.fontawesome.com/49bd9f441f.js" crossorigin="anonymous"></script>
+    <title>Contact Page</title>
+</head>
+<body>
+    <!-- Navigation bar section--> <hr>
+    <nav class="navbar">
+        <a href="contact.html" class="nav-link">Harry Kayson</a>
+        
+        <div class="navbar-collapse">
+            <a href="index.html"class="nav-link"><i class="fas fa-home"></i>Home page</a>
+            <a href="project.html"class="nav-link"><i class="fas fa-tasks"></i>Project</a>
+            <a href="services.html"class="nav-link"><i class="fas fa-cogs"></i>Services</a>
+            <a href="about.html"class="nav-link"><i class="fas fa-address-card"></i>About</a>
+            <a href="blog.html"class="nav-link"><i class="fas fa-blog"></i>Blog</a>
+            <a href="contact.html"class="nav-link"><i class="fas fa-envelope-open-text"></i>Contact</a>
+            <a href="resume.html"class="nav-link"><i class="fas fa-file"></i>Resume</a>
+        </div>
 
-      <!--Hero/Jumbotron Section-->
-      <hr/>
-      <title>Contact Page</title>
-      <header>
-        <h1>Hi there!</h1>
-        <header>My name is Harrison Ngatia.</header>
-        <img src="IMG_20220206_215150.jpg" alt="Harry's photo" width="500" height="600">
-      
-      <!--main page content-->
-     <hr/>
-      <main>
-        <p>Email:</p>
-        <input type="text"name="txtEmail" id="txtEmail"value="ngatiaharrison086@gmail.com"/>
-        <p>Name:</p>
-        <input type="text"name="txtName" id="txtName"value="Harrison Ngatia"/>
-        <p>Subject:</p>
-        <input type="text"name="txtSubject" id="txtSubject"value="Web Dev 1"/>
-        <p>Contact</p>
-        <input type="text"name="txtContact" id="txtContact"value="0746****70"/>
-        <p>Types of product and services i offer</p>
-        <form>
-          <select name ="software development">
-            <option value="Web development">Web development</option>
-            <option value="Data analysis">Data analysis</option>
-            <option value="Networking">Networking</option>                   
-          </select>
+    </nav>
+
+   <!--Hero section--> <hr>
+    <header>
+        <img src="WhatsApp Image 2022-03-19 at 10.12.32 AM.jpeg" 
+        alt="Profile image" 
+        width="300" length= "300"/>
+        <h1> Drop me line</h1>
+        <p> Whether it's a compliment, a service request,
+            project or consultation,
+            you can reach me by filling the form below.
+        </p>
+    </header>
+
+    <!--jumbotron--> 
+    
+    <p><h2> To reach out to me </h2></p>
+
+    <!-- Main page content--><hr>
+    <main>
+        <form action="contact-form">
+
+            <label for="email">Email*</label><br>
+            <input type="text" name="email"  size="50" placeholder="Your Email" required>
+            <br>
+            <br>
+            
+            <label for="name">Name*</label><br>
+            <input type="text" name="name" size="50" placeholder="Your Name" required>
+            <br>
+            <br>
+            
+            <label for="tel">Tel</label>
+            <input type="tel" name="Tel" size="3" placeholder="+254">
+            <input type="text" name="Tel" id="Tel" placeholder="7********">
+            <br>
+            <br>
+
+            <label for="Products">Preffered means:</label>
+            Tel:<input type="radio" name="Preffered means" value="Tel">
+            Email:<input type="radio" name="Preffered means" value="Email">
+            
+            <br>
+            <br>
+
+            <label for="Product">Product*</label>
+            <select name="Types of services" id="Services">
+                <option value="web application development">web application</option>
+                <option value="network consulting">network consulting</option>
+                <option value="quality assurance">quality assurance</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="Subject">Subject</label>
+            <input type="text" name="Subject" size="28">
+            <br>
+            <br>
+            
+            <label for="Message">Message*</label>
+            <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+
+            <label for="subscription">Subscribe to news and offers</label>
+            <input type="checkbox" name="">
+            <br>
+            <br>
+            
+            
+            <label for="Send message"></label>
+            <input type="button" value="Send message">
+            
+            <br>
+            <br>
+
         </form>
-        <p>Customer feedback</p>
-        <input type="text"name="txtMessage" id="txtMessage"value=""placeholder="Please leave your feedback here"/>
-        <p>Please subscribe below</p>
-        <input type="checkbox"name="Subscribe"/>Subscribe
-        <p></p>
-        <button>Click to send feedback</button>
-       </main>
-      
-      <!--footer section-->
-      <hr/>
-      <footer>
-        <ul>
-          <li><a href="https://github.com/HarryKayson">Github</a></li>
-          <li><a href="https://twitter.com/Harrisonngatia1">Twitter</a></li>
-          <li><a href="ngatiaharrison086@gmail.com">GMail</a></li>
-        </ul>
-      </footer>
-    </body>
-  </html>
+    </main>
+
+    
+    <!--Footer Section--><hr>
+    <footer>
+        <div>                 
+            <a href="https://github.com/HarryKayson"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://gmail.com/ngatiaharrison086@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>    
+        </div>
+
+         <div>
+             <p>&copy; 2022. All rights reserved. </p>
+             <p>&trade;HarryKayson </p>
+   
+        </div>
+
+   </footer>
+
+    
+</body>
+</html>
