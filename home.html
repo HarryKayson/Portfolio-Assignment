@@ -3,11 +3,13 @@ Harrison Ngatia
 Dse-01-0167/2021
 portfolio assignment
 Web dev 1
--->
+ -->
     
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <body bgcolor="white">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +18,7 @@ Web dev 1
     <title>Home Page</title>
 </head>
 
-    <!-- Navigation bar section--> <hr>
+    <!-- Navigation bar section --> <hr>
     <nav class="navbar">
         <a href="about.html" class="nav-link">Harry Kayson</a>
         
@@ -32,9 +34,10 @@ Web dev 1
 
     </nav>
 
-   <!--Hero section--> <hr>
+   <!--Hero section --> <hr>
     <header>
-        <img src="WhatsApp Image 2022-03-19 at 10.12.32 AM.jpeg" 
+        
+        <img src="WhatsApp_Image_2022-03-19_at_10.12.32_AM-removebg-preview.png" 
               alt="Profile image" 
               width="300" length= "300"/>
 
@@ -42,7 +45,7 @@ Web dev 1
         <p> Find out everything about me</p>
     </header>
 
-    <!-- Main page content--><hr>
+    <!-- Main page content --><hr>
     <main>
         <h2>Hey There!!!</h2>
         <p>
@@ -75,6 +78,126 @@ Web dev 1
             </tr>
 
         </table>
+   
+    <title>Projects done</title>
+<style>
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    body{
+        background: #fefefe;
+        font-family: sans-serif;
+    }
+    .container{
+        width:90%;
+        margin:50px auto;
+    }
+    .heading{
+        text-align:center;
+        font-size:30px;
+        margin-bottom: 50px;
+    }
+    .row {
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+        flex-flow: wrap;
+    }
+    .card{
+        width:20%;
+        background:#fff;
+        border:1px solid #ccc;
+        margin-bottom:50px;
+        transition:0.3s;
+    }
+.card-header{
+    text-align:center;
+    padding:50px 10px;
+    background:linear-gradient(to right, #ff416c, #ff4b2b);
+    color: #fff;
+}
+.card-body{
+    padding:30px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+.card-body .btn{
+    display:block;
+    color:#fff;
+    text-align:center;
+    background:linear-gradient(to right, #ff416c, #ff4b2b);
+    margin-top:30px;
+    text-decoration: none;
+    padding:10px 5px;   
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0,0,0.25);
+}
+
+@media screen and (max-width:1000px){
+    .card{
+        width:40%;
+    }
+}
+@media screen and (max-width:620px){
+    .container{
+        width:100%;
+    }
+    .heading{
+        padding:20px;
+        font-size:20px;
+    }
+    .card{
+        width:80%;
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1> 
+                Projects done
+            </h1>
+        </div>
+
+        <div class="row">
+            <div class="card">
+                <div class="card-header">
+                    <h1>React</h1>
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius libero vel dolore aut, expedita reiciendis odio unde similique provident perspiciatis debitis hic! Labore quia ducimus facere voluptatibus esse nisi dolore.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h1>Vue</h1>
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius libero vel dolore aut, expedita reiciendis odio unde similique provident perspiciatis debitis hic! Labore quia ducimus facere voluptatibus esse nisi dolore.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h1>Angular</h1>
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius libero vel dolore aut, expedita reiciendis odio unde similique provident perspiciatis debitis hic! Labore quia ducimus facere voluptatibus esse nisi dolore.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+
+
     </main>
     
     <!--Footer Section--><hr>
@@ -91,6 +214,6 @@ Web dev 1
         </div>
 
     </footer>
-
+</body>
 </body>
 </html>
